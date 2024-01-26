@@ -1,0 +1,52 @@
+body {
+    display: block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: url('./234623462346.png') no-repeat;
+    background-size: cover;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    p,span {
+        color: white;
+    }
+}
+
+span, p {
+    color: #571099;
+}
+
+.cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.block {
+    flex: 0 0 calc(25% - 20px); /* Убираем гибкость, учитывая padding */
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 20px; /* Добавляем отступ снизу между блоками */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+@media (max-width: 780px) {
+    .block {
+        flex: 0 0 calc(100% - 20px); /* Изменяем ширину блоков для планшетов */
+        }
+        
+    }
+
+
+@media (max-width: 500px) {
+    .block {
+        
+        
+        flex: 0 0 calc(100% - 20px); /* Полная ширина блоков для мобильных устройств */
+    }
+}
